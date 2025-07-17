@@ -101,12 +101,6 @@ importers:
       '@mui/material':
         specifier: ^7.2.0
         version: 7.2.0(@emotion/react@11.14.0(@types/react@19.1.8)(react@19.1.0))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.1.8)(react@19.1.0))(@types/react@19.1.8)(react@19.1.0))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
-      react:
-        specifier: ^19.1.0
-        version: 19.1.0
-      react-dom:
-        specifier: ^19.1.0
-        version: 19.1.0(react@19.1.0)
     devDependencies:
       '@chromatic-com/storybook':
         specifier: ^4.0.1
@@ -165,6 +159,12 @@ importers:
       playwright:
         specifier: ^1.54.1
         version: 1.54.1
+      react:
+        specifier: ^19.1.0
+        version: 19.1.0
+      react-dom:
+        specifier: ^19.1.0
+        version: 19.1.0(react@19.1.0)
       storybook:
         specifier: ^9.0.17
         version: 9.0.17(@testing-library/dom@10.4.0)
