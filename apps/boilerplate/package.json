@@ -1,0 +1,36 @@
+{
+  "name": "boilerplate",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "workspace:*",
+    "react-dom": "workspace:*"
+  },
+  "devDependencies": {
+    "@chromatic-com/storybook": "workspace:*",
+    "@storybook/addon-a11y": "workspace:*",
+    "@storybook/addon-docs": "workspace:*",
+    "@storybook/addon-vitest": "workspace:*",
+    "@storybook/react-vite": "workspace:*",
+    "@types/node": "workspace:*",
+    "@types/react": "workspace:*",
+    "@types/react-dom": "workspace:*",
+    "@vitejs/plugin-react": "workspace:*",
+    "@vitest/browser": "workspace:*",
+    "@vitest/coverage-v8": "workspace:*",
+    "jsdom": "workspace:*",
+    "playwright": "workspace:*",
+    "storybook": "workspace:*",
+    "tsup": "workspace:*",
+    "typescript": "workspace:*",
+    "vite": "workspace:*",
+    "vitest": "workspace:*"
+  }
+}
