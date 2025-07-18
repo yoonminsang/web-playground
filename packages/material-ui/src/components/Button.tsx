@@ -1,5 +1,5 @@
-import { Button as MaterialButton } from "@mui/material";
-import type { ComponentPropsWithRef } from "react";
+import { Button as MaterialButton } from '@mui/material';
+import type { ComponentPropsWithRef } from 'react';
 
 type Props = ComponentPropsWithRef<typeof MaterialButton>;
 
