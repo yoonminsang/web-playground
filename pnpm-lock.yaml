@@ -125,7 +125,7 @@ importers:
         specifier: ^3.2.4
         version: 3.2.4(@types/node@22.16.4)(@vitest/browser@3.2.4)(jsdom@26.1.0)
 
-  apps/ex:
+  apps/material-ui-ex:
     dependencies:
       '@packages/material-ui':
         specifier: workspace:*
