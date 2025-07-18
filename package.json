@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "ex": "pnpm --filter ex",
+    "material-ui-ex": "pnpm --filter material-ui-ex",
+    "boilerplate": "pnpm --filter boilerplate",
     "material-ui": "pnpm --filter material-ui",
     "prettier": "prettier . --write",
     "lint": "eslint .",
