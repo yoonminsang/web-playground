@@ -6,12 +6,16 @@
   "scripts": {
     "ex": "pnpm --filter ex",
     "material-ui": "pnpm --filter material-ui",
+    "prettier": "prettier . --write",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "packageManager": "pnpm@10.12.1",
+  "devDependencies": {
+    "prettier": "^3.6.2"
+  },
   "pnpm": {
     "overrides": {
       "@chromatic-com/storybook": "^4.0.1",
