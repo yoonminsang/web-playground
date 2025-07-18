@@ -10,13 +10,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@packages/material-ui": "workspace:*",
     "react": "workspace:*",
-    "react-dom": "workspace:*",
-    "@packages/material-ui": "workspace:*"
+    "react-dom": "workspace:*"
   },
   "devDependencies": {
     "@chromatic-com/storybook": "workspace:*",
-    "@eslint/js": "workspace:*",
     "@storybook/addon-a11y": "workspace:*",
     "@storybook/addon-docs": "workspace:*",
     "@storybook/addon-vitest": "workspace:*",
@@ -27,17 +26,11 @@
     "@vitejs/plugin-react": "workspace:*",
     "@vitest/browser": "workspace:*",
     "@vitest/coverage-v8": "workspace:*",
-    "eslint": "workspace:*",
-    "eslint-plugin-react-hooks": "workspace:*",
-    "eslint-plugin-react-refresh": "workspace:*0",
-    "eslint-plugin-storybook": "workspace:*",
-    "globals": "workspace:*",
     "jsdom": "workspace:*",
     "playwright": "workspace:*",
     "storybook": "workspace:*",
     "tsup": "workspace:*",
     "typescript": "workspace:*",
-    "typescript-eslint": "workspace:*",
     "vite": "workspace:*",
     "vitest": "workspace:*"
   }
