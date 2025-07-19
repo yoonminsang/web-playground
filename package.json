@@ -6,10 +6,12 @@
   "scripts": {
     "material-ui-ex": "pnpm --filter material-ui-ex",
     "material-ui": "pnpm --filter material-ui",
+    "ci": "pnpm install --frozen-lockfile && pnpm -r --parallel typecheck && pnpm -r --parallel lint && pnpm -r test",
     "prettier": "prettier . --write",
-    "lint": "eslint .",
-    "lint:fix": "eslint . --fix",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "pnpm -r lint",
+    "lint:fix": "pnpm -r lint:fix",
+    "test": "pnpm -r test",
+    "typecheck": "pnpm -r typecheck"
   },
   "keywords": [],
   "author": "",
