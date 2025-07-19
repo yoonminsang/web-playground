@@ -7,9 +7,17 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "test": "vitest run",
+    "test:watch": "vitest watch",
+    "test:coverage": "vitest --coverage",
+    "typecheck": "tsc -b --noEmit",
+    "typecheck:watch": "pnpm run typecheck --watch"
   },
   "dependencies": {
+    "es-toolkit": "workspace:*",
     "react": "workspace:*",
     "react-dom": "workspace:*"
   },
@@ -19,6 +27,9 @@
     "@storybook/addon-docs": "workspace:*",
     "@storybook/addon-vitest": "workspace:*",
     "@storybook/react-vite": "workspace:*",
+    "@testing-library/jest-dom": "workspace:*",
+    "@testing-library/react": "workspace:*",
+    "@testing-library/user-event": "workspace:*",
     "@types/node": "workspace:*",
     "@types/react": "workspace:*",
     "@types/react-dom": "workspace:*",

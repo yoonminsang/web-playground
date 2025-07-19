@@ -50,6 +50,7 @@ export default defineConfig({
             '**/build/**', // 빌드 결과물 제외
           ],
           environment: 'jsdom', // React 컴포넌트 테스트시 필요
+          setupFiles: ['./src/test/setup.ts'],
         },
       },
     ],

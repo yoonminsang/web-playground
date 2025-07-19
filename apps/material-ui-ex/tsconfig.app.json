@@ -22,7 +22,9 @@
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true,
 
+    "baseUrl": ".",
     "paths": {
+      "@/*": ["./src/*"],
       "@packages/material-ui": ["../../packages/material-ui/src/index"]
     }
   },
