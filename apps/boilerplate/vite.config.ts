@@ -11,6 +11,11 @@ const dirname = typeof __dirname !== 'undefined' ? __dirname : path.dirname(file
 // More info at: https://storybook.js.org/docs/next/writing-tests/integrations/vitest-addon
 export default defineConfig({
   plugins: [react()],
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, './src'),
+    },
+  },
   test: {
     projects: [
       {
@@ -50,6 +55,7 @@ export default defineConfig({
             '**/build/**', // 빌드 결과물 제외
           ],
           environment: 'jsdom', // React 컴포넌트 테스트시 필요
+          setupFiles: ['./src/test/setup.ts'],
         },
       },
     ],

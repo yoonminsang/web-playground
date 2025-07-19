@@ -29,6 +29,7 @@
     "build-storybook": "storybook build",
     "test": "vitest run",
     "test:watch": "vitest watch",
+    "test:coverage": "vitest --coverage",
     "typecheck": "tsc -b --noEmit",
     "typecheck:watch": "pnpm run typecheck --watch"
   },
@@ -41,6 +42,9 @@
     "@storybook/addon-docs": "workspace:*",
     "@storybook/addon-vitest": "workspace:*",
     "@storybook/react-vite": "workspace:*",
+    "@testing-library/jest-dom": "workspace:*",
+    "@testing-library/react": "workspace:*",
+    "@testing-library/user-event": "workspace:*",
     "@types/node": "workspace:*",
     "@types/react": "workspace:*",
     "@types/react-dom": "workspace:*",
@@ -55,10 +59,10 @@
     "tsup": "workspace:*",
     "typescript": "workspace:*",
     "vite": "workspace:*",
-    "vitest": "workspace:*4"
+    "vitest": "workspace:*"
   },
   "peerDependencies": {
     "react": "workspace:*",
-    "react-dom": "workspace:*0"
+    "react-dom": "workspace:*"
   }
 }
