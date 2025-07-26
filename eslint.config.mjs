@@ -1,5 +1,6 @@
 // For more info, see https://github.com/storybookjs/eslint-plugin-storybook#configuration-flat-config-format
 import js from '@eslint/js';
+import pluginQuery from '@tanstack/eslint-plugin-query';
 import eslintConfigPrettier from 'eslint-config-prettier';
 import reactHooks from 'eslint-plugin-react-hooks';
 import reactRefresh from 'eslint-plugin-react-refresh';
@@ -13,6 +14,9 @@ export default tseslint.config(
     globalIgnores(['dist', 'node_modules']),
     {
       files: ['**/*.{ts,tsx}'],
+      plugins: {
+        '@tanstack/query': pluginQuery,
+      },
       extends: [
         js.configs.recommended,
         tseslint.configs.recommended,
@@ -27,6 +31,7 @@ export default tseslint.config(
       rules: {
         // NOTE: 전체 규칙
         // 'no-console': 'warn',
+        '@tanstack/query/exhaustive-deps': 'error',
       },
     },
     // NOTE: 커스텀 규칙
