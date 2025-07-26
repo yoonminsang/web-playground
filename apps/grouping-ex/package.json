@@ -1,0 +1,47 @@
+{
+  "name": "grouping-ex",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "test": "vitest run",
+    "test:watch": "vitest watch",
+    "test:coverage": "vitest --coverage",
+    "typecheck": "tsc -b --noEmit",
+    "typecheck:watch": "pnpm run typecheck --watch"
+  },
+  "dependencies": {
+    "es-toolkit": "workspace:*",
+    "react": "workspace:*",
+    "react-dom": "workspace:*"
+  },
+  "devDependencies": {
+    "@chromatic-com/storybook": "workspace:*",
+    "@storybook/addon-a11y": "workspace:*",
+    "@storybook/addon-docs": "workspace:*",
+    "@storybook/addon-vitest": "workspace:*",
+    "@storybook/react-vite": "workspace:*",
+    "@testing-library/jest-dom": "workspace:*",
+    "@testing-library/react": "workspace:*",
+    "@testing-library/user-event": "workspace:*",
+    "@types/node": "workspace:*",
+    "@types/react": "workspace:*",
+    "@types/react-dom": "workspace:*",
+    "@vitejs/plugin-react": "workspace:*",
+    "@vitest/browser": "workspace:*",
+    "@vitest/coverage-v8": "workspace:*",
+    "jsdom": "workspace:*",
+    "playwright": "workspace:*",
+    "storybook": "workspace:*",
+    "tsup": "workspace:*",
+    "typescript": "workspace:*",
+    "vite": "workspace:*",
+    "vitest": "workspace:*"
+  }
+}

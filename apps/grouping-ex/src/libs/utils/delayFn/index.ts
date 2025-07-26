@@ -1,0 +1,1 @@
+export { delayFn } from './delayFn';

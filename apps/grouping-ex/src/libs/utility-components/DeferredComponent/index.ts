@@ -1,0 +1,1 @@
+export { DeferredComponent } from './DeferredComponent';
