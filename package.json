@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "grouping-ex": "pnpm --filter grouping-ex",
     "material-ui-ex": "pnpm --filter material-ui-ex",
     "material-ui": "pnpm --filter material-ui",
     "ci": "pnpm install --frozen-lockfile && pnpm -r --parallel typecheck && pnpm -r --parallel lint && pnpm -r test",
