@@ -1,5 +1,6 @@
 import type { Preview } from '@storybook/react-vite';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import { reactRouterParameters, withRouter } from 'storybook-addon-remix-react-router';
 
 const queryClient = new QueryClient();
 
@@ -18,6 +19,13 @@ const preview: Preview = {
       // 'off' - skip a11y checks entirely
       test: 'todo',
     },
+
+    reactRouter: reactRouterParameters({
+      location: {
+        pathParams: { userId: '42' },
+      },
+      routing: { path: '/users/:userId' },
+    }),
   },
 
   decorators: [
@@ -26,6 +34,7 @@ const preview: Preview = {
         <Story />
       </QueryClientProvider>
     ),
+    withRouter,
   ],
 };
 

@@ -42,6 +42,7 @@
     "jsdom": "workspace:*",
     "playwright": "workspace:*",
     "storybook": "workspace:*",
+    "storybook-addon-remix-react-router": "workspace:*",
     "tsup": "workspace:*",
     "typescript": "workspace:*",
     "vite": "workspace:*",
