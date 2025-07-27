@@ -1,9 +1,7 @@
-function App() {
-  return (
-    <>
-      <h1>Boilerplate</h1>
-    </>
-  );
-}
+import { RouterProvider } from 'react-router/dom';
 
-export default App;
+import { routes } from './routes';
+
+export const App = () => {
+  return <RouterProvider router={routes} />;
+};
