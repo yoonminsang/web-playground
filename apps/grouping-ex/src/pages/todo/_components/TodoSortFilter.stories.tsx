@@ -14,7 +14,7 @@ export default meta;
 // type Story = StoryObj<typeof meta>;
 
 export const Default = () => {
-  const [sortOption, setSortOption] = useState<TodoSortOption>(TodoSortOption.asc);
+  const [sortOption, setSortOption] = useState<TodoSortOption>(TodoSortOption.createdAtAsc);
 
   return <TodoSortFilter value={sortOption} onChange={setSortOption} />;
 };

@@ -7,7 +7,7 @@ export const TodoGroupingOption = {
 export type TodoGroupingOption = ExtractValue<typeof TodoGroupingOption>;
 
 export const TodoSortOption = {
-  asc: 'asc',
-  desc: 'desc',
+  createdAtAsc: 'createdAtAsc',
+  createdAtDesc: 'createdAtDesc',
 } as const;
 export type TodoSortOption = ExtractValue<typeof TodoSortOption>;

@@ -10,8 +10,8 @@ export const TodoSortFilter = ({ value, onChange }: Props) => {
     <div>
       <div>정렬</div>
       <select value={value} onChange={(e) => onChange(e.target.value as TodoSortOption)}>
-        <option value={TodoSortOption.asc}>오름차순</option>
-        <option value={TodoSortOption.desc}>내림차순</option>
+        <option value={TodoSortOption.createdAtAsc}>오래된순</option>
+        <option value={TodoSortOption.createdAtDesc}>최신순</option>
       </select>
     </div>
   );
