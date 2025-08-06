@@ -4,12 +4,21 @@
 
 ## 📚 목적
 
-실무에서 자주 사용하는 웹 개발 패턴들을 연습합니다
-도메인 특화 로직을 제거하고 순수한 기술적 구현에 집중합니다
-새로운 기술이나 라이브러리를 안전하게 실험합니다
+- 실무에서 자주 사용하는 웹 개발 패턴들을 연습합니다
+- 도메인 특화 로직을 제거하고 순수한 기술적 구현에 집중합니다
+- 새로운 기술이나 라이브러리를 안전하게 실험합니다
 
 ## 🛠 기술 스택
 
-패키지 매니저: pnpm
-모노레포: pnpm workspaces
-주요 기술: React, TypeScript
+- 패키지 매니저: pnpm
+- 모노레포: pnpm workspaces
+- 주요 기술: React, TypeScript
+
+## TODO
+
+- 그룹핑
+- 무한스크롤
+- Suspense
+- CI CD
+- "sort-package": "pnpm -r exec npx sort-package-json" 추가하기?
+- prettier ,lint 루트 스크립트 명령어 교체, 내부 패키지도 전부 교체
