@@ -27,7 +27,7 @@ const preview: Preview = {
       routing: { path: '/users/:userId' },
     }),
   },
-
+  
   decorators: [
     (Story) => (
       <QueryClientProvider client={queryClient}>
@@ -36,6 +36,8 @@ const preview: Preview = {
     ),
     withRouter,
   ],
+
+  tags: ['autodocs'],
 };
 
 export default preview;
