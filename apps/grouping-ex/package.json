@@ -17,9 +17,12 @@
     "typecheck:watch": "pnpm run typecheck --watch"
   },
   "dependencies": {
+    "@tanstack/react-query": "workspace:*",
     "es-toolkit": "workspace:*",
     "react": "workspace:*",
-    "react-dom": "workspace:*"
+    "react-dom": "workspace:*",
+    "react-error-boundary": "workspace:*",
+    "react-router": "workspace:*"
   },
   "devDependencies": {
     "@chromatic-com/storybook": "workspace:*",
@@ -39,6 +42,7 @@
     "jsdom": "workspace:*",
     "playwright": "workspace:*",
     "storybook": "workspace:*",
+    "storybook-addon-remix-react-router": "workspace:*",
     "tsup": "workspace:*",
     "typescript": "workspace:*",
     "vite": "workspace:*",

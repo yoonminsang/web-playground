@@ -20,12 +20,14 @@ describe('EmptyChildrenFallback', () => {
     expect(screen.getByText('대체 컨텐츠')).toBeInTheDocument();
   });
 
-  it('조건부 렌더링으로 자식 컴포넌트가 null이면 fallback을 렌더링한다', () => {
+  it('조건부 렌더링으로 자식 컴포넌트가 없으면 fallback을 렌더링한다', () => {
     const items: string[] = [];
 
     render(
       <EmptyChildrenFallback fallback={<div>데이터가 없습니다</div>}>
-        {items.length > 0 && items.map((item, index) => <div key={index}>{item}</div>)}
+        {items.map((item, index) => (
+          <div key={index}>{item}</div>
+        ))}
       </EmptyChildrenFallback>
     );
 
@@ -37,7 +39,9 @@ describe('EmptyChildrenFallback', () => {
 
     render(
       <EmptyChildrenFallback fallback={<div>데이터가 없습니다</div>}>
-        {items.length > 0 && items.map((item, index) => <div key={index}>{item}</div>)}
+        {items.map((item, index) => (
+          <div key={index}>{item}</div>
+        ))}
       </EmptyChildrenFallback>
     );
 
